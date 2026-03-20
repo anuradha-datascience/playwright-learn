@@ -1,0 +1,22 @@
+import { defineConfig, devices } from '@playwright/test';
+
+/**
+ * See https://playwright.dev/docs/test-configuration.
+ */
+export default defineConfig({
+  testDir: './tests',
+  retries:2,
+  timeout:40*1000,
+  expect:{
+    timeout:40*1000,
+  },
+  reporter:'html',
+  use: {
+    browserName:"chromium",
+    headless:false,
+    baseURL: "https://qa-cart.com",
+    storageState: "state.json",
+  },
+   globalSetup: require.resolve("./helpers/global-setup.ts"),
+
+  });

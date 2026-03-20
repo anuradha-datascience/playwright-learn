@@ -1,0 +1,14 @@
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+*.zip
+
+# Storage state (auth)
+state.json
+.playwright/
+
+# Allure
+allure-results/
+allure-report/
