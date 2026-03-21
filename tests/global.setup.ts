@@ -6,7 +6,9 @@ test("global setup: clean reports and create authenticated session", async ({ pa
   cleanArtifacts();
 
   const storageStatePath = "state.json";
-  const username = process.env.DEMO_USER;
+  // const username = process.env.DEMO_USER;
+  // const password = process.env.DEMO_PASS;
+  const username = process.env.DEMO_USERNAME;
   const password = process.env.DEMO_PASS;
 
   if (!username || !password) {

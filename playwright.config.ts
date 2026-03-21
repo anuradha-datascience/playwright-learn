@@ -7,6 +7,7 @@ dotenv.config({ quiet: true });
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  workers: process.env.CI ? 1 : undefined,
   testDir: './tests',
   retries:2,
   timeout:40*1000,
