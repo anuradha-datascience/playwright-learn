@@ -25,7 +25,7 @@ export default defineConfig({
     screenshot: "only-on-failure", 
     video: "retain-on-failure", 
     trace: "retain-on-failure",
-    headless: process.env.CI ? true : undefined,,
+    headless: process.env.CI ? true : undefined,
   },
   projects: [
     // 1) Setup project runs first
