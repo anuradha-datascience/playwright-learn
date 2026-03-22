@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DEMO_USERNAME: ${{ secrets.DEMO_USERNAME }}
+      DEMO_USERNAME: ${{ secrets.DEMO_USER }}
       DEMO_PASS: ${{ secrets.DEMO_PASS }}
 
     steps:

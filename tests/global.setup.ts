@@ -8,12 +8,14 @@ test("global setup: clean reports and create authenticated session", async ({ pa
   const storageStatePath = "state.json";
   // const username = process.env.DEMO_USER;
   // const password = process.env.DEMO_PASS;
-  const username = process.env.DEMO_USERNAME;
+  const username = process.env.DEMO_USER;
   const password = process.env.DEMO_PASS;
 
-  if (!username || !password) {
-    throw new Error("Missing DEMO_USER or DEMO_PASS in .env file");
+ 
+    if (!username || !password) {
+    throw new Error("Missing DEMO_USERNAME or DEMO_PASS in GitHub Actions secrets");
   }
+
 
   const loginPage = new LoginPage(page);
 
