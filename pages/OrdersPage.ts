@@ -6,7 +6,7 @@ export class OrdersPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.ordersTable = page.locator("table.woocommerce-orders-table");
+    this.ordersTable = page.locator("table.woocommerce-orders-table1");
   }
 
   async verifyPageLoaded() {
